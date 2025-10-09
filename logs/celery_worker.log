@@ -1,0 +1,283 @@
+[2025-10-09 12:17:54,574: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 12:17:54,677: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 12:17:54,681: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 12:17:54,685: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 12:17:55,703: INFO/MainProcess] mingle: all alone
+[2025-10-09 12:17:55,721: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 12:18:30,855: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 12:18:30,884: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 12:18:30,888: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 12:18:30,898: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 12:18:31,918: INFO/MainProcess] mingle: all alone
+[2025-10-09 12:18:31,938: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 12:19:53,996: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 12:19:54,043: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 12:19:54,045: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 12:19:54,049: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 12:19:55,065: INFO/MainProcess] mingle: all alone
+[2025-10-09 12:19:55,088: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 12:20:37,637: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 12:20:37,660: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 12:20:37,663: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 12:20:37,667: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 12:20:38,682: INFO/MainProcess] mingle: all alone
+[2025-10-09 12:20:38,704: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 12:21:48,937: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 12:21:48,964: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 12:21:48,968: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 12:21:48,972: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 12:21:49,991: INFO/MainProcess] mingle: all alone
+[2025-10-09 12:21:50,009: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 13:42:46,789: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 13:42:46,822: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 13:42:46,826: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 13:42:46,836: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 13:42:47,860: INFO/MainProcess] mingle: all alone
+[2025-10-09 13:42:47,890: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 14:09:56,632: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 14:09:56,651: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 14:09:56,653: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 14:09:56,656: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 14:09:57,670: INFO/MainProcess] mingle: all alone
+[2025-10-09 14:09:57,692: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 14:18:37,013: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 14:18:37,033: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 14:18:37,036: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 14:18:37,040: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 14:18:38,057: INFO/MainProcess] mingle: all alone
+[2025-10-09 14:18:38,080: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 14:39:43,535: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 14:39:43,555: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 14:39:43,557: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 14:39:43,564: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 14:39:44,737: INFO/MainProcess] mingle: all alone
+[2025-10-09 14:39:44,757: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 14:43:59,742: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[598f2ca0-5a05-4dcb-ac6d-db2db7a08b94] received
+[2025-10-09 14:44:01,270: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['cosmeaf@gmail.com'] (count=1)
+[2025-10-09 14:44:01,280: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[598f2ca0-5a05-4dcb-ac6d-db2db7a08b94] succeeded in 1.5360092360060662s: None
+[2025-10-09 15:29:25,345: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 15:29:25,371: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 15:29:25,373: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 15:29:25,380: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 15:29:26,398: INFO/MainProcess] mingle: all alone
+[2025-10-09 15:29:26,422: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 15:50:14,453: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 15:50:14,528: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 15:50:14,530: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 15:50:14,537: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 15:50:15,550: INFO/MainProcess] mingle: all alone
+[2025-10-09 15:50:15,576: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 16:01:01,282: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 16:01:01,337: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 16:01:01,340: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 16:01:01,351: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 16:01:02,370: INFO/MainProcess] mingle: all alone
+[2025-10-09 16:01:02,393: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 16:02:21,118: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 16:02:21,173: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 16:02:21,176: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 16:02:21,183: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 16:02:22,200: INFO/MainProcess] mingle: all alone
+[2025-10-09 16:02:22,218: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 17:07:02,170: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 17:07:02,207: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 17:07:02,210: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 17:07:02,219: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 17:07:03,238: INFO/MainProcess] mingle: all alone
+[2025-10-09 17:07:03,264: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 17:45:56,760: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[e0d8d07e-443f-4e97-90ce-b852eabae11e] received
+[2025-10-09 17:45:56,768: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[e9d33e35-4060-4f0c-aac1-0c26133ecb13] received
+[2025-10-09 17:45:58,329: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['cs@velomacontabilidade.com'] (count=1)
+[2025-10-09 17:45:58,343: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[e9d33e35-4060-4f0c-aac1-0c26133ecb13] succeeded in 1.5689846499999476s: None
+[2025-10-09 17:45:58,421: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['cs@velomacontabilidade.com'] (count=1)
+[2025-10-09 17:45:58,432: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[e0d8d07e-443f-4e97-90ce-b852eabae11e] succeeded in 1.658280845000263s: None
+[2025-10-09 17:54:09,858: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 17:54:09,907: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 17:54:09,909: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 17:54:09,912: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 17:54:10,926: INFO/MainProcess] mingle: all alone
+[2025-10-09 17:54:10,954: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 17:59:11,531: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 17:59:11,549: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-09 17:59:11,552: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-10-09 17:59:11,560: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-09 17:59:12,575: INFO/MainProcess] mingle: all alone
+[2025-10-09 17:59:12,594: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-09 18:16:54,833: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[d0396e39-d053-4ab8-986f-846bdc05d2ca] received
+[2025-10-09 18:16:54,842: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[88a434d2-5afd-48bd-9121-0e3c27440f76] received
+[2025-10-09 18:16:56,593: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['ana@exemplo.pt'] (count=1)
+[2025-10-09 18:16:56,604: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[d0396e39-d053-4ab8-986f-846bdc05d2ca] succeeded in 1.7623205330000928s: None
+[2025-10-09 18:16:56,667: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['ana@exemplo.pt'] (count=1)
+[2025-10-09 18:16:56,677: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[88a434d2-5afd-48bd-9121-0e3c27440f76] succeeded in 1.8307225010003094s: None
+[2025-10-09 18:19:42,642: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[1a9c26bc-ef3c-47aa-9679-1f7371b8a58f] received
+[2025-10-09 18:19:42,647: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[ba0cb513-c5ed-4bce-b632-a2332ddedc8c] received
+[2025-10-09 18:19:43,974: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['ana@exemplo.pt'] (count=1)
+[2025-10-09 18:19:43,979: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[ba0cb513-c5ed-4bce-b632-a2332ddedc8c] succeeded in 1.3296545499997592s: None
+[2025-10-09 18:19:43,982: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['ana@exemplo.pt'] (count=1)
+[2025-10-09 18:19:43,987: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[1a9c26bc-ef3c-47aa-9679-1f7371b8a58f] succeeded in 1.3433665700003985s: None
+[2025-10-09 18:39:35,236: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[da78005b-4b87-4941-a410-d9bb5750bf27] received
+[2025-10-09 18:39:35,242: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[5d52128a-7d1c-4864-97b1-468485d6872e] received
+[2025-10-09 18:39:37,083: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['suporte@velomacontabilidade.com'] (count=1)
+[2025-10-09 18:39:37,090: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[5d52128a-7d1c-4864-97b1-468485d6872e] succeeded in 1.8443086220004261s: None
+[2025-10-09 18:39:37,093: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['suporte@velomacontabilidade.com'] (count=1)
+[2025-10-09 18:39:37,100: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[da78005b-4b87-4941-a410-d9bb5750bf27] succeeded in 1.8552432019996559s: None

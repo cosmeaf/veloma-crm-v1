@@ -1,0 +1,6 @@
+Olá {{ user.first_name }},
+
+Confirme o seu e-mail acedendo ao link:
+{{ verify_link }}
+
+Se não foi você, ignore esta mensagem.

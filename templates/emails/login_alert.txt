@@ -1,0 +1,6 @@
+Olá {{ user.first_name }},
+
+Novo acesso detetado:
+IP: {{ ip|default:"desconhecido" }}
+Agente: {{ user_agent|default:"desconhecido" }}
+Data/Hora (UTC): {{ when }}

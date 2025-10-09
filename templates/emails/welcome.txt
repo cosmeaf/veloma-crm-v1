@@ -1,0 +1,5 @@
+Olá {{ user.first_name }},
+
+Bem-vindo(a) à Veloma! Sua conta foi criada com sucesso.
+
+— Equipa Veloma
