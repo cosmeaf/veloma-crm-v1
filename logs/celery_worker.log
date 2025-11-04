@@ -1,283 +1,507 @@
-[2025-10-09 12:17:54,574: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-10 16:23:08,767: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 12:17:54,677: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 12:17:54,681: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-10 16:23:08,784: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-10 16:23:08,787: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 12:17:54,685: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 12:17:55,703: INFO/MainProcess] mingle: all alone
-[2025-10-09 12:17:55,721: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 12:18:30,855: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-10 16:23:08,791: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-10 16:23:09,806: INFO/MainProcess] mingle: all alone
+[2025-10-10 16:23:09,829: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-12 10:43:22,438: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 12:18:30,884: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 12:18:30,888: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-12 10:43:22,469: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-12 10:43:22,472: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 12:18:30,898: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 12:18:31,918: INFO/MainProcess] mingle: all alone
-[2025-10-09 12:18:31,938: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 12:19:53,996: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-12 10:43:22,480: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-12 10:43:23,499: INFO/MainProcess] mingle: all alone
+[2025-10-12 10:43:23,999: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-12 11:16:25,228: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 340, in start
+    blueprint.start(self)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 746, in start
+    c.loop(*c.loop_args())
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/loops.py", line 97, in asynloop
+    next(loop)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/kombu/asynchronous/hub.py", line 373, in create_loop
+    cb(*cbargs)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/kombu/transport/redis.py", line 1359, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/kombu/transport/redis.py", line 576, in on_readable
+    chan.handlers[type]()
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/kombu/transport/redis.py", line 925, in _receive
+    ret.append(self._receive_one(c))
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/kombu/transport/redis.py", line 935, in _receive_one
+    response = c.parse_response()
+               ^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 926, in parse_response
+    response = self._execute(conn, try_read)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 902, in _execute
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/retry.py", line 65, in call_with_retry
+    fail(error)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 904, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 891, in _disconnect_raise_connect
+    raise error
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 903, in <lambda>
+    lambda: command(*args, **kwargs),
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 924, in try_read
+    return conn.read_response(disconnect_on_error=False, push_request=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/connection.py", line 613, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+[2025-10-12 11:16:25,285: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:391: CPendingDeprecationWarning: 
+In Celery 5.1 we introduced an optional breaking change which
+on connection loss cancels all currently executed tasks with late acknowledgement enabled.
+These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered
+back to the queue. You can enable this behavior using the worker_cancel_long_running_tasks_on_connection_loss
+setting. In Celery 5.1 it is set to False by default. The setting will be set to True by default in Celery 6.0.
+
+  warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
+
+[2025-10-12 11:16:25,295: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 12:19:54,043: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 12:19:54,045: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-12 11:16:25,297: ERROR/MainProcess] consumer: Cannot connect to redis://127.0.0.1:6379/0: Error 111 connecting to 127.0.0.1:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2025-10-12 11:16:27,305: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-12 11:16:27,306: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 12:19:54,049: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 12:19:55,065: INFO/MainProcess] mingle: all alone
-[2025-10-09 12:19:55,088: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 12:20:37,637: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-12 11:16:27,314: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-12 11:16:28,323: INFO/MainProcess] mingle: all alone
+[2025-10-13 05:23:12,107: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[3109d77e-a1b6-4787-a76e-df297644cd1e] received
+[2025-10-13 05:23:12,121: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[509c5374-03b1-4c05-a2fe-b251008b42a5] received
+[2025-10-13 05:23:14,010: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['lima@exemplo.pt'] (count=1)
+[2025-10-13 05:23:14,010: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['lima@exemplo.pt'] (count=1)
+[2025-10-13 05:23:14,024: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[3109d77e-a1b6-4787-a76e-df297644cd1e] succeeded in 1.9101686519570649s: None
+[2025-10-13 05:23:14,025: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[509c5374-03b1-4c05-a2fe-b251008b42a5] succeeded in 1.899624917015899s: None
+[2025-10-13 06:46:14,304: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[fa7f6b07-c220-494d-98c0-fd71890a9d06] received
+[2025-10-13 06:46:14,308: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[a4911fc3-ead7-4b2c-bf5d-0bbcb441838c] received
+[2025-10-13 06:46:16,123: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['limateste@exemplo.com'] (count=1)
+[2025-10-13 06:46:16,132: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[fa7f6b07-c220-494d-98c0-fd71890a9d06] succeeded in 1.8219896419905126s: None
+[2025-10-13 06:46:16,146: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['limateste@exemplo.com'] (count=1)
+[2025-10-13 06:46:16,154: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[a4911fc3-ead7-4b2c-bf5d-0bbcb441838c] succeeded in 1.8396259259898216s: None
+[2025-10-14 10:08:58,536: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[d4a129ee-c308-4c26-89fb-35be79f821f5] received
+[2025-10-14 10:09:05,473: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['cosme.alex@gmail.com'] (count=1)
+[2025-10-14 10:09:05,486: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[d4a129ee-c308-4c26-89fb-35be79f821f5] succeeded in 6.9406660120002925s: None
+[2025-10-15 18:54:02,767: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 12:20:37,660: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 12:20:37,663: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-15 18:54:02,839: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-15 18:54:02,842: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 12:20:37,667: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 12:20:38,682: INFO/MainProcess] mingle: all alone
-[2025-10-09 12:20:38,704: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 12:21:48,937: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-15 18:54:02,853: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-15 18:54:03,874: INFO/MainProcess] mingle: all alone
+[2025-10-15 18:54:03,905: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-16 06:00:57,961: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 340, in start
+    blueprint.start(self)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 746, in start
+    c.loop(*c.loop_args())
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/loops.py", line 97, in asynloop
+    next(loop)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/kombu/asynchronous/hub.py", line 373, in create_loop
+    cb(*cbargs)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/kombu/transport/redis.py", line 1359, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/kombu/transport/redis.py", line 576, in on_readable
+    chan.handlers[type]()
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/kombu/transport/redis.py", line 925, in _receive
+    ret.append(self._receive_one(c))
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/kombu/transport/redis.py", line 935, in _receive_one
+    response = c.parse_response()
+               ^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 926, in parse_response
+    response = self._execute(conn, try_read)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 902, in _execute
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/retry.py", line 65, in call_with_retry
+    fail(error)
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 904, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 891, in _disconnect_raise_connect
+    raise error
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 903, in <lambda>
+    lambda: command(*args, **kwargs),
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/client.py", line 924, in try_read
+    return conn.read_response(disconnect_on_error=False, push_request=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/connection.py", line 613, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/root/projects/veloma/venv/lib/python3.12/site-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+[2025-10-16 06:00:58,000: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:391: CPendingDeprecationWarning: 
+In Celery 5.1 we introduced an optional breaking change which
+on connection loss cancels all currently executed tasks with late acknowledgement enabled.
+These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered
+back to the queue. You can enable this behavior using the worker_cancel_long_running_tasks_on_connection_loss
+setting. In Celery 5.1 it is set to False by default. The setting will be set to True by default in Celery 6.0.
+
+  warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
+
+[2025-10-16 06:00:58,006: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 12:21:48,964: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 12:21:48,968: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-16 06:00:58,009: ERROR/MainProcess] consumer: Cannot connect to redis://127.0.0.1:6379/0: Error 111 connecting to 127.0.0.1:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2025-10-16 06:01:00,033: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-16 06:01:00,036: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 12:21:48,972: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 12:21:49,991: INFO/MainProcess] mingle: all alone
-[2025-10-09 12:21:50,009: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 13:42:46,789: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-16 06:01:00,046: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-16 06:01:01,064: INFO/MainProcess] mingle: all alone
+[2025-10-29 14:17:10,204: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 13:42:46,822: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 13:42:46,826: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-29 14:17:10,309: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-29 14:17:10,311: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 13:42:46,836: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 13:42:47,860: INFO/MainProcess] mingle: all alone
-[2025-10-09 13:42:47,890: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 14:09:56,632: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-29 14:17:10,318: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-29 14:17:11,332: INFO/MainProcess] mingle: all alone
+[2025-10-29 14:17:11,360: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-29 14:51:30,294: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[e492122a-6879-42db-81c2-a1ac7a99cff8] received
+[2025-10-29 14:51:30,299: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[72f059fa-1e89-4b36-b668-09469456d058] received
+[2025-10-29 14:51:32,485: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['thales.soares@ptec.dev'] (count=1)
+[2025-10-29 14:51:32,490: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['thales.soares@ptec.dev'] (count=1)
+[2025-10-29 14:51:32,496: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[e492122a-6879-42db-81c2-a1ac7a99cff8] succeeded in 2.1966764310000144s: None
+[2025-10-29 14:51:32,500: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[72f059fa-1e89-4b36-b668-09469456d058] succeeded in 2.19760229800022s: None
+[2025-10-29 14:53:27,333: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[9325ed9a-5a32-4a3f-88e0-a335542799be] received
+[2025-10-29 14:53:28,880: INFO/ForkPoolWorker-1] E-mail enviado: Confirme seu e-mail -> ['thales.soares@ptec.dev'] (count=1)
+[2025-10-29 14:53:28,884: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[9325ed9a-5a32-4a3f-88e0-a335542799be] succeeded in 1.5487169789998916s: None
+[2025-10-30 16:51:16,225: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[a3430292-9439-4afb-afbc-63d47d447a4c] received
+[2025-10-30 16:51:16,229: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[ba61d25e-0cd4-414d-9012-4a05ca851833] received
+[2025-10-30 16:51:18,559: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['mechelle4505@uorak.com'] (count=1)
+[2025-10-30 16:51:18,564: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[ba61d25e-0cd4-414d-9012-4a05ca851833] succeeded in 2.3324819619883783s: None
+[2025-10-30 16:51:19,091: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['mechelle4505@uorak.com'] (count=1)
+[2025-10-30 16:51:19,096: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[a3430292-9439-4afb-afbc-63d47d447a4c] succeeded in 2.8667220460047247s: None
+[2025-10-30 16:51:40,130: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[3d72b06b-bdae-4614-87d4-294c77c224e8] received
+[2025-10-30 16:51:41,716: INFO/ForkPoolWorker-1] E-mail enviado: Confirme seu e-mail -> ['mechelle4505@uorak.com'] (count=1)
+[2025-10-30 16:51:41,721: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[3d72b06b-bdae-4614-87d4-294c77c224e8] succeeded in 1.590460389998043s: None
+[2025-10-30 17:38:08,498: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 14:09:56,651: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 14:09:56,653: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-30 17:38:08,529: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-30 17:38:08,532: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 14:09:56,656: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 14:09:57,670: INFO/MainProcess] mingle: all alone
-[2025-10-09 14:09:57,692: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 14:18:37,013: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-30 17:38:08,537: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-30 17:38:09,553: INFO/MainProcess] mingle: all alone
+[2025-10-30 17:38:09,574: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-30 17:43:20,009: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[457ed213-cc87-4f6f-9b52-17f637da4003] received
+[2025-10-30 17:43:20,015: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[f9430b32-d379-488d-a529-192f22b3a3b2] received
+[2025-10-30 17:43:21,667: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['lukman6297@uorak.com'] (count=1)
+[2025-10-30 17:43:21,675: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[457ed213-cc87-4f6f-9b52-17f637da4003] succeeded in 1.6621107749999737s: None
+[2025-10-30 17:43:22,203: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['lukman6297@uorak.com'] (count=1)
+[2025-10-30 17:43:22,219: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[f9430b32-d379-488d-a529-192f22b3a3b2] succeeded in 2.201157823000017s: None
+[2025-10-30 18:14:03,952: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 14:18:37,033: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 14:18:37,036: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-30 18:14:03,975: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-30 18:14:03,977: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 14:18:37,040: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 14:18:38,057: INFO/MainProcess] mingle: all alone
-[2025-10-09 14:18:38,080: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 14:39:43,535: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-30 18:14:03,986: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-30 18:14:05,001: INFO/MainProcess] mingle: all alone
+[2025-10-30 18:14:05,019: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-30 18:15:31,769: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[8e70187c-2ef3-4336-a117-e72f5aa0ea98] received
+[2025-10-30 18:15:31,779: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[b9bbed97-cc07-4ee2-b465-877758d155a8] received
+[2025-10-30 18:15:33,785: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['waleska46@uorak.com'] (count=1)
+[2025-10-30 18:15:33,791: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[8e70187c-2ef3-4336-a117-e72f5aa0ea98] succeeded in 2.0206731190000937s: None
+[2025-10-30 18:15:33,812: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['waleska46@uorak.com'] (count=1)
+[2025-10-30 18:15:33,818: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[b9bbed97-cc07-4ee2-b465-877758d155a8] succeeded in 2.038009672000044s: None
+[2025-10-30 18:43:39,371: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[13a11f12-e4fe-48f0-850e-1f590677188e] received
+[2025-10-30 18:43:39,376: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[b2159a49-309a-439b-9dae-473cf4b71982] received
+[2025-10-30 18:43:40,864: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['sinforiano2941@uorak.com'] (count=1)
+[2025-10-30 18:43:40,870: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[13a11f12-e4fe-48f0-850e-1f590677188e] succeeded in 1.4942282739998518s: None
+[2025-10-30 18:43:40,961: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['sinforiano2941@uorak.com'] (count=1)
+[2025-10-30 18:43:40,968: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[b2159a49-309a-439b-9dae-473cf4b71982] succeeded in 1.587942430000112s: None
+[2025-10-30 18:47:17,980: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[4cb397d2-8ea9-4c2d-bb18-e223b61c405f] received
+[2025-10-30 18:47:17,985: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[f28bc5a2-e087-48c7-bd38-b878a7a31c7a] received
+[2025-10-30 18:47:19,466: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['portia879@uorak.com'] (count=1)
+[2025-10-30 18:47:19,474: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[f28bc5a2-e087-48c7-bd38-b878a7a31c7a] succeeded in 1.4838876119993074s: None
+[2025-10-30 18:47:19,618: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['portia879@uorak.com'] (count=1)
+[2025-10-30 18:47:19,625: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[4cb397d2-8ea9-4c2d-bb18-e223b61c405f] succeeded in 1.640054145999784s: None
+[2025-10-30 18:49:13,606: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[275c133b-3999-40ef-9fa3-2723362d90b8] received
+[2025-10-30 18:49:15,121: INFO/ForkPoolWorker-1] E-mail enviado: Confirme seu e-mail -> ['portia879@uorak.com'] (count=1)
+[2025-10-30 18:49:15,126: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[275c133b-3999-40ef-9fa3-2723362d90b8] succeeded in 1.5185070920006183s: None
+[2025-10-30 18:52:09,536: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[dc3128b7-8755-43b4-8994-210415f68f60] received
+[2025-10-30 18:52:09,540: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[115e693c-44ef-4f47-8028-c9e27b8995c3] received
+[2025-10-30 18:52:10,907: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['jonnie2776@uorak.com'] (count=1)
+[2025-10-30 18:52:10,911: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[115e693c-44ef-4f47-8028-c9e27b8995c3] succeeded in 1.3693063320006331s: None
+[2025-10-30 18:52:11,587: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['jonnie2776@uorak.com'] (count=1)
+[2025-10-30 18:52:11,591: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[dc3128b7-8755-43b4-8994-210415f68f60] succeeded in 2.054000060999897s: None
+[2025-10-31 09:31:24,329: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 14:39:43,555: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 14:39:43,557: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-31 09:31:24,354: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-10-31 09:31:24,357: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 14:39:43,564: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 14:39:44,737: INFO/MainProcess] mingle: all alone
-[2025-10-09 14:39:44,757: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 14:43:59,742: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[598f2ca0-5a05-4dcb-ac6d-db2db7a08b94] received
-[2025-10-09 14:44:01,270: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['cosmeaf@gmail.com'] (count=1)
-[2025-10-09 14:44:01,280: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[598f2ca0-5a05-4dcb-ac6d-db2db7a08b94] succeeded in 1.5360092360060662s: None
-[2025-10-09 15:29:25,345: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-10-31 09:31:24,361: INFO/MainProcess] mingle: searching for neighbors
+[2025-10-31 09:31:25,381: INFO/MainProcess] mingle: all alone
+[2025-10-31 09:31:25,399: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-10-31 14:26:20,213: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[16af58fd-e4c6-4c5a-9529-0b6f73d57402] received
+[2025-10-31 14:26:20,219: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[e62181d1-ae5b-4a5d-a6eb-e27cd6bb2556] received
+[2025-10-31 14:26:22,964: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['rafaelina6211@uorak.com'] (count=1)
+[2025-10-31 14:26:22,971: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[e62181d1-ae5b-4a5d-a6eb-e27cd6bb2556] succeeded in 2.748817881998548s: None
+[2025-10-31 14:26:23,256: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['rafaelina6211@uorak.com'] (count=1)
+[2025-10-31 14:26:23,263: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[16af58fd-e4c6-4c5a-9529-0b6f73d57402] succeeded in 3.0418463069981954s: None
+[2025-10-31 14:50:11,101: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[be481a03-bfb3-426a-a64f-8e280f4052ba] received
+[2025-10-31 14:50:13,621: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['rafaelina6211@uorak.com'] (count=1)
+[2025-10-31 14:50:13,626: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[be481a03-bfb3-426a-a64f-8e280f4052ba] succeeded in 2.5222480449992872s: None
+[2025-10-31 15:14:03,688: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[ef977459-f44a-43dc-ad89-2947f7e212b6] received
+[2025-10-31 15:14:03,691: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[b404d18a-eb2b-4302-99a1-e9811ed7a5fc] received
+[2025-10-31 15:14:05,898: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['tisa6933@uorak.com'] (count=1)
+[2025-10-31 15:14:05,904: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[b404d18a-eb2b-4302-99a1-e9811ed7a5fc] succeeded in 2.2099858340006904s: None
+[2025-10-31 15:14:18,611: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['tisa6933@uorak.com'] (count=1)
+[2025-10-31 15:14:18,616: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[ef977459-f44a-43dc-ad89-2947f7e212b6] succeeded in 14.924260104002315s: None
+[2025-10-31 15:14:51,680: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[7f06db31-3e36-4c8c-a5ad-250db63fc55b] received
+[2025-10-31 15:14:53,803: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['tisa6933@uorak.com'] (count=1)
+[2025-10-31 15:14:53,808: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[7f06db31-3e36-4c8c-a5ad-250db63fc55b] succeeded in 2.126947515000211s: None
+[2025-10-31 15:25:38,120: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[f8c5de57-8840-4bb7-b0e7-ee125289f67a] received
+[2025-10-31 15:25:38,122: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[b7dbafcf-3125-41ee-baa8-a68ee24915a0] received
+[2025-10-31 15:25:40,212: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['kiesha5124@uorak.com'] (count=1)
+[2025-10-31 15:25:40,217: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[f8c5de57-8840-4bb7-b0e7-ee125289f67a] succeeded in 2.093897292001202s: None
+[2025-10-31 15:25:40,330: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['kiesha5124@uorak.com'] (count=1)
+[2025-10-31 15:25:40,335: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[b7dbafcf-3125-41ee-baa8-a68ee24915a0] succeeded in 2.210316751999926s: None
+[2025-10-31 17:33:04,497: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[09c40b8a-264e-4bb8-885a-0663ea9966b1] received
+[2025-10-31 17:33:04,499: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[446be211-fce4-4600-a509-a447bb3895c8] received
+[2025-10-31 17:33:07,151: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 17:33:07,157: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[09c40b8a-264e-4bb8-885a-0663ea9966b1] succeeded in 2.656744232001074s: None
+[2025-10-31 17:33:07,166: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 17:33:07,171: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[446be211-fce4-4600-a509-a447bb3895c8] succeeded in 2.670146810996812s: None
+[2025-10-31 17:37:43,423: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[a00d300f-f11c-40e3-8334-977aba70ffcc] received
+[2025-10-31 17:37:48,699: INFO/ForkPoolWorker-1] E-mail enviado: Confirme seu e-mail -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 17:37:48,704: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[a00d300f-f11c-40e3-8334-977aba70ffcc] succeeded in 5.277487381998071s: None
+[2025-10-31 17:41:22,562: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[643f7632-08b9-4d8f-afc2-7f641e9fc7d2] received
+[2025-10-31 17:41:24,396: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 17:41:24,399: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[643f7632-08b9-4d8f-afc2-7f641e9fc7d2] succeeded in 1.8355719360006333s: None
+[2025-10-31 17:44:50,126: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[a20d453b-12ff-47d3-98dd-aa1a4d513ad1] received
+[2025-10-31 17:44:51,539: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 17:44:51,542: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[a20d453b-12ff-47d3-98dd-aa1a4d513ad1] succeeded in 1.414712531000987s: None
+[2025-10-31 17:45:25,787: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[677a21d3-9fbc-487d-a2df-4711689b87e7] received
+[2025-10-31 17:45:27,430: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 17:45:27,433: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[677a21d3-9fbc-487d-a2df-4711689b87e7] succeeded in 1.6449492030005786s: None
+[2025-10-31 17:46:01,855: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[0219b47f-a878-4a90-837b-6377f2796db7] received
+[2025-10-31 17:46:03,492: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 17:46:03,496: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[0219b47f-a878-4a90-837b-6377f2796db7] succeeded in 1.6394319419996464s: None
+[2025-10-31 17:50:24,612: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[e668aac4-de8a-4be9-ab78-bbc0c58b67e2] received
+[2025-10-31 17:50:25,971: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 17:50:25,976: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[e668aac4-de8a-4be9-ab78-bbc0c58b67e2] succeeded in 1.3625351119990228s: None
+[2025-10-31 17:57:55,207: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[b2d3f8ab-9257-4c8c-870b-cb515b0c9788] received
+[2025-10-31 17:57:56,719: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 17:57:56,725: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[b2d3f8ab-9257-4c8c-870b-cb515b0c9788] succeeded in 1.5140768889978062s: None
+[2025-10-31 18:00:44,164: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[f629ca86-46a2-4ba8-be8f-995272f98389] received
+[2025-10-31 18:00:45,673: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 18:00:45,677: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[f629ca86-46a2-4ba8-be8f-995272f98389] succeeded in 1.5114394439988246s: None
+[2025-10-31 18:02:40,410: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[b771fea5-6e5b-44ca-bf75-32663bd3296f] received
+[2025-10-31 18:02:41,706: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['zhongyi2087@uorak.com'] (count=1)
+[2025-10-31 18:02:41,712: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[b771fea5-6e5b-44ca-bf75-32663bd3296f] succeeded in 1.2989216489986575s: None
+[2025-10-31 18:07:12,102: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[e23dde86-6539-40ff-9c3f-73d47327931c] received
+[2025-10-31 18:07:12,104: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[4fcb56cd-631f-43e4-9a3c-6c7add3a712b] received
+[2025-10-31 18:07:13,702: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:07:13,706: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[e23dde86-6539-40ff-9c3f-73d47327931c] succeeded in 1.6033087210016674s: None
+[2025-10-31 18:07:13,718: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:07:13,723: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[4fcb56cd-631f-43e4-9a3c-6c7add3a712b] succeeded in 1.6162354050029535s: None
+[2025-10-31 18:07:47,138: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[bcf5fb50-631d-430a-a1ed-9396fc8892ce] received
+[2025-10-31 18:07:48,407: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:07:48,413: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[bcf5fb50-631d-430a-a1ed-9396fc8892ce] succeeded in 1.2745083239969972s: None
+[2025-10-31 18:10:36,016: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[63e23de0-e8cd-4c2b-bae5-211e71fb8ba1] received
+[2025-10-31 18:10:37,536: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:10:37,541: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[63e23de0-e8cd-4c2b-bae5-211e71fb8ba1] succeeded in 1.5242305110004963s: None
+[2025-10-31 18:14:10,428: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[17950225-44e6-42f0-9840-4eafff364dba] received
+[2025-10-31 18:14:11,899: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:14:11,903: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[17950225-44e6-42f0-9840-4eafff364dba] succeeded in 1.4737082889987505s: None
+[2025-10-31 18:16:04,343: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[d1ddd894-3524-401d-a023-ec30d8ab8fad] received
+[2025-10-31 18:16:05,596: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:16:05,601: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[d1ddd894-3524-401d-a023-ec30d8ab8fad] succeeded in 1.2564456479994988s: None
+[2025-10-31 18:25:06,249: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[ac57cf9c-2580-42d6-89d5-3acde19bb7c0] received
+[2025-10-31 18:25:07,967: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:25:07,973: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[ac57cf9c-2580-42d6-89d5-3acde19bb7c0] succeeded in 1.7194973750010831s: None
+[2025-10-31 18:26:44,806: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[e26f0fe4-080e-4d4f-a831-163eb479cfa9] received
+[2025-10-31 18:26:46,036: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:26:46,042: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[e26f0fe4-080e-4d4f-a831-163eb479cfa9] succeeded in 1.2346924459998263s: None
+[2025-10-31 18:30:04,206: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[b10d6603-16e7-49bb-a311-b6a5bea4780d] received
+[2025-10-31 18:30:05,494: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:30:05,497: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[b10d6603-16e7-49bb-a311-b6a5bea4780d] succeeded in 1.289988792999793s: None
+[2025-10-31 18:31:52,013: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[9056f948-fec3-41bd-b0c8-76a8f6afa379] received
+[2025-10-31 18:31:53,538: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:31:53,541: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[9056f948-fec3-41bd-b0c8-76a8f6afa379] succeeded in 1.5273043060005875s: None
+[2025-10-31 18:34:15,411: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[694ac12e-b4e2-47ec-be41-d4714ab4824b] received
+[2025-10-31 18:34:16,660: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:34:16,665: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[694ac12e-b4e2-47ec-be41-d4714ab4824b] succeeded in 1.2526882180027314s: None
+[2025-10-31 18:36:51,679: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[909c7d46-8c88-4c60-9931-c15fa2c43130] received
+[2025-10-31 18:36:52,977: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:36:52,980: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[909c7d46-8c88-4c60-9931-c15fa2c43130] succeeded in 1.3003701659981743s: None
+[2025-10-31 18:39:18,778: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[4fb5b8eb-b5e1-4c80-86d1-82dc3d0604a6] received
+[2025-10-31 18:39:20,145: INFO/ForkPoolWorker-1] E-mail enviado: Senha alterada com sucesso -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:39:20,148: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[4fb5b8eb-b5e1-4c80-86d1-82dc3d0604a6] succeeded in 1.3686409779984388s: None
+[2025-10-31 18:41:20,130: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[c26d2394-c076-401f-bf9b-980c3f29c682] received
+[2025-10-31 18:41:21,391: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:41:21,397: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[c26d2394-c076-401f-bf9b-980c3f29c682] succeeded in 1.262268763006432s: None
+[2025-10-31 18:46:14,051: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[b3f9c17f-42ed-45d1-9a71-4c996394b169] received
+[2025-10-31 18:46:15,429: INFO/ForkPoolWorker-1] E-mail enviado: Código de Recuperação -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:46:15,436: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[b3f9c17f-42ed-45d1-9a71-4c996394b169] succeeded in 1.3840675050014397s: None
+[2025-10-31 18:49:57,038: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[82334ca2-336d-41e4-a757-ce2f94fad960] received
+[2025-10-31 18:49:58,312: INFO/ForkPoolWorker-1] E-mail enviado: Senha alterada com sucesso -> ['neisa5929@uorak.com'] (count=1)
+[2025-10-31 18:49:58,316: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[82334ca2-336d-41e4-a757-ce2f94fad960] succeeded in 1.2766644860021188s: None
+[2025-11-03 14:32:13,183: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 15:29:25,371: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 15:29:25,373: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-11-03 14:32:13,237: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-11-03 14:32:13,241: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 15:29:25,380: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 15:29:26,398: INFO/MainProcess] mingle: all alone
-[2025-10-09 15:29:26,422: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 15:50:14,453: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-11-03 14:32:13,251: INFO/MainProcess] mingle: searching for neighbors
+[2025-11-03 14:32:14,274: INFO/MainProcess] mingle: all alone
+[2025-11-03 14:32:14,294: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-11-03 17:27:54,700: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[5a924b01-e453-4155-9ff2-f95b28252c0a] received
+[2025-11-03 17:27:54,718: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[1d2f8fd8-3766-40b9-8277-a2439cf71ca1] received
+[2025-11-03 17:27:56,611: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['oukacha913@uorak.com'] (count=1)
+[2025-11-03 17:27:56,613: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['oukacha913@uorak.com'] (count=1)
+[2025-11-03 17:27:56,623: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[1d2f8fd8-3766-40b9-8277-a2439cf71ca1] succeeded in 1.9003345720120706s: None
+[2025-11-03 17:27:56,626: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[5a924b01-e453-4155-9ff2-f95b28252c0a] succeeded in 1.9140751909581013s: None
+[2025-11-03 18:27:51,339: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 15:50:14,528: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 15:50:14,530: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-11-03 18:27:51,368: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-11-03 18:27:51,370: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 15:50:14,537: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 15:50:15,550: INFO/MainProcess] mingle: all alone
-[2025-10-09 15:50:15,576: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 16:01:01,282: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-11-03 18:27:51,374: INFO/MainProcess] mingle: searching for neighbors
+[2025-11-03 18:27:52,395: INFO/MainProcess] mingle: all alone
+[2025-11-03 18:27:52,543: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
+[2025-11-04 12:31:21,361: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 16:01:01,337: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 16:01:01,340: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+[2025-11-04 12:31:21,435: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2025-11-04 12:31:21,438: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
 whether broker connection retries are made during startup in Celery 6.0 and above.
 If you wish to retain the existing behavior for retrying connections on startup,
 you should set broker_connection_retry_on_startup to True.
   warnings.warn(
 
-[2025-10-09 16:01:01,351: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 16:01:02,370: INFO/MainProcess] mingle: all alone
-[2025-10-09 16:01:02,393: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 16:02:21,118: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
-whether broker connection retries are made during startup in Celery 6.0 and above.
-If you wish to retain the existing behavior for retrying connections on startup,
-you should set broker_connection_retry_on_startup to True.
-  warnings.warn(
-
-[2025-10-09 16:02:21,173: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 16:02:21,176: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
-whether broker connection retries are made during startup in Celery 6.0 and above.
-If you wish to retain the existing behavior for retrying connections on startup,
-you should set broker_connection_retry_on_startup to True.
-  warnings.warn(
-
-[2025-10-09 16:02:21,183: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 16:02:22,200: INFO/MainProcess] mingle: all alone
-[2025-10-09 16:02:22,218: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 17:07:02,170: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
-whether broker connection retries are made during startup in Celery 6.0 and above.
-If you wish to retain the existing behavior for retrying connections on startup,
-you should set broker_connection_retry_on_startup to True.
-  warnings.warn(
-
-[2025-10-09 17:07:02,207: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 17:07:02,210: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
-whether broker connection retries are made during startup in Celery 6.0 and above.
-If you wish to retain the existing behavior for retrying connections on startup,
-you should set broker_connection_retry_on_startup to True.
-  warnings.warn(
-
-[2025-10-09 17:07:02,219: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 17:07:03,238: INFO/MainProcess] mingle: all alone
-[2025-10-09 17:07:03,264: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 17:45:56,760: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[e0d8d07e-443f-4e97-90ce-b852eabae11e] received
-[2025-10-09 17:45:56,768: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[e9d33e35-4060-4f0c-aac1-0c26133ecb13] received
-[2025-10-09 17:45:58,329: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['cs@velomacontabilidade.com'] (count=1)
-[2025-10-09 17:45:58,343: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[e9d33e35-4060-4f0c-aac1-0c26133ecb13] succeeded in 1.5689846499999476s: None
-[2025-10-09 17:45:58,421: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['cs@velomacontabilidade.com'] (count=1)
-[2025-10-09 17:45:58,432: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[e0d8d07e-443f-4e97-90ce-b852eabae11e] succeeded in 1.658280845000263s: None
-[2025-10-09 17:54:09,858: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
-whether broker connection retries are made during startup in Celery 6.0 and above.
-If you wish to retain the existing behavior for retrying connections on startup,
-you should set broker_connection_retry_on_startup to True.
-  warnings.warn(
-
-[2025-10-09 17:54:09,907: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 17:54:09,909: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
-whether broker connection retries are made during startup in Celery 6.0 and above.
-If you wish to retain the existing behavior for retrying connections on startup,
-you should set broker_connection_retry_on_startup to True.
-  warnings.warn(
-
-[2025-10-09 17:54:09,912: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 17:54:10,926: INFO/MainProcess] mingle: all alone
-[2025-10-09 17:54:10,954: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 17:59:11,531: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
-whether broker connection retries are made during startup in Celery 6.0 and above.
-If you wish to retain the existing behavior for retrying connections on startup,
-you should set broker_connection_retry_on_startup to True.
-  warnings.warn(
-
-[2025-10-09 17:59:11,549: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
-[2025-10-09 17:59:11,552: WARNING/MainProcess] /root/projects/veloma/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
-whether broker connection retries are made during startup in Celery 6.0 and above.
-If you wish to retain the existing behavior for retrying connections on startup,
-you should set broker_connection_retry_on_startup to True.
-  warnings.warn(
-
-[2025-10-09 17:59:11,560: INFO/MainProcess] mingle: searching for neighbors
-[2025-10-09 17:59:12,575: INFO/MainProcess] mingle: all alone
-[2025-10-09 17:59:12,594: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.
-[2025-10-09 18:16:54,833: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[d0396e39-d053-4ab8-986f-846bdc05d2ca] received
-[2025-10-09 18:16:54,842: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[88a434d2-5afd-48bd-9121-0e3c27440f76] received
-[2025-10-09 18:16:56,593: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['ana@exemplo.pt'] (count=1)
-[2025-10-09 18:16:56,604: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[d0396e39-d053-4ab8-986f-846bdc05d2ca] succeeded in 1.7623205330000928s: None
-[2025-10-09 18:16:56,667: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['ana@exemplo.pt'] (count=1)
-[2025-10-09 18:16:56,677: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[88a434d2-5afd-48bd-9121-0e3c27440f76] succeeded in 1.8307225010003094s: None
-[2025-10-09 18:19:42,642: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[1a9c26bc-ef3c-47aa-9679-1f7371b8a58f] received
-[2025-10-09 18:19:42,647: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[ba0cb513-c5ed-4bce-b632-a2332ddedc8c] received
-[2025-10-09 18:19:43,974: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['ana@exemplo.pt'] (count=1)
-[2025-10-09 18:19:43,979: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[ba0cb513-c5ed-4bce-b632-a2332ddedc8c] succeeded in 1.3296545499997592s: None
-[2025-10-09 18:19:43,982: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['ana@exemplo.pt'] (count=1)
-[2025-10-09 18:19:43,987: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[1a9c26bc-ef3c-47aa-9679-1f7371b8a58f] succeeded in 1.3433665700003985s: None
-[2025-10-09 18:39:35,236: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[da78005b-4b87-4941-a410-d9bb5750bf27] received
-[2025-10-09 18:39:35,242: INFO/MainProcess] Task services.utils.emails.email_service.send_email_task[5d52128a-7d1c-4864-97b1-468485d6872e] received
-[2025-10-09 18:39:37,083: INFO/ForkPoolWorker-2] E-mail enviado: Confirme seu e-mail -> ['suporte@velomacontabilidade.com'] (count=1)
-[2025-10-09 18:39:37,090: INFO/ForkPoolWorker-2] Task services.utils.emails.email_service.send_email_task[5d52128a-7d1c-4864-97b1-468485d6872e] succeeded in 1.8443086220004261s: None
-[2025-10-09 18:39:37,093: INFO/ForkPoolWorker-1] E-mail enviado: Bem-vindo(a) à plataforma -> ['suporte@velomacontabilidade.com'] (count=1)
-[2025-10-09 18:39:37,100: INFO/ForkPoolWorker-1] Task services.utils.emails.email_service.send_email_task[da78005b-4b87-4941-a410-d9bb5750bf27] succeeded in 1.8552432019996559s: None
+[2025-11-04 12:31:21,441: INFO/MainProcess] mingle: searching for neighbors
+[2025-11-04 12:31:22,454: INFO/MainProcess] mingle: all alone
+[2025-11-04 12:31:22,469: INFO/MainProcess] celery@veloma-srv-01.alvelos.com ready.

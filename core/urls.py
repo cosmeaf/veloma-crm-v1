@@ -12,6 +12,8 @@ urlpatterns = [
     path("api/auth/login", TokenObtainPairWithRoleView.as_view(), name="token_obtain_pair"),
     path("api/auth/refresh", TokenRefreshWithRoleView.as_view(), name="token_refresh"),
     path("api/auth/", include("authentication.urls")),
+    path("api/", include("auditlog.urls")),
+    # path('api/', include('banking.urls')),
     # OpenAPI schema e UIs
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path("api/docs/", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger-ui"),

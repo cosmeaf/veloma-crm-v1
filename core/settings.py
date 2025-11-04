@@ -67,9 +67,12 @@ INSTALLED_APPS = [
     'django_celery_results',
     'django_celery_beat',
     'authentication',
+    'auditlog',
+    # 'banking',
 ]
 
 MIDDLEWARE = [
+    "auditlog.middleware.RequestIDMiddleware",
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -78,6 +81,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "auditlog.middleware.AuditMiddleware",
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -240,6 +244,21 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = TIME_ZONE
 CELERY_ENABLE_UTC = True
+
+# Escolha do backend
+STORAGE_BACKEND = config("STORAGE_BACKEND", default="minio")  # "minio" ou "local"
+
+# MinIO
+MINIO_ENDPOINT = config("MINIO_ENDPOINT", default="127.0.0.1:9002")  # tua porta mapeada
+MINIO_ACCESS_KEY = config("MINIO_ACCESS_KEY", default="")
+MINIO_SECRET_KEY = config("MINIO_SECRET_KEY", default="")
+MINIO_BUCKET = config("MINIO_BUCKET", default="veloma")
+MINIO_SECURE = config("MINIO_SECURE", cast=bool, default=False)
+MINIO_REGION = config("MINIO_REGION", default=None)
+MINIO_PREFIX = config("MINIO_PREFIX", default="")  # opcional, ex: "prod"
+
+# Storage local (dev)
+LOCAL_STORAGE_DIR = config("LOCAL_STORAGE_DIR", default=None)
 
 
 LOGGING = {
